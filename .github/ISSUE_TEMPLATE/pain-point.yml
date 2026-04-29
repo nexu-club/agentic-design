@@ -1,0 +1,39 @@
+name: 📝 Pain point
+description: Tell us about a design-workflow pain you hit today
+labels: ["pain-point"]
+body:
+  - type: textarea
+    id: pain
+    attributes:
+      label: What hurt?
+      description: Describe the specific moment in your design / product workflow where things broke down.
+      placeholder: "I was trying to hand off a Figma file to engineering and..."
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What were you trying to do?
+      placeholder: "Ship a new onboarding flow for our app."
+    validations:
+      required: true
+  - type: input
+    id: stack
+    attributes:
+      label: Your current tool stack
+      placeholder: "Figma + Linear + GitHub + Slack"
+  - type: dropdown
+    id: team-size
+    attributes:
+      label: Team size
+      options:
+        - Solo
+        - 2–10
+        - 11–50
+        - 51–200
+        - 200+
+  - type: input
+    id: ideal
+    attributes:
+      label: In a perfect world, how would this work?
+      placeholder: "I'd just tell an agent 'ship this to engineering' and it would..."

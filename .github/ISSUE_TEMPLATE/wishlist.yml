@@ -1,0 +1,21 @@
+name: 💡 Feature wish
+description: Tell us what Open Design should do
+labels: ["wishlist"]
+body:
+  - type: textarea
+    id: wish
+    attributes:
+      label: What do you wish Open Design could do?
+      placeholder: "I wish I could @mention a copy-agent and have it rewrite every label in the canvas to match a new tone..."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why? What would it unlock for you?
+      placeholder: "I run a solo SaaS. Rewriting copy across 40 screens takes me a full day..."
+  - type: input
+    id: similar
+    attributes:
+      label: Is anything close to this already out there?
+      placeholder: "Not really, but Framer has something similar for animation"
